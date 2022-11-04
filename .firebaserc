@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "quisette-me": {
+      "hosting": {
+        "Markdownist": [
+          "markdownist"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "quisette-me"
+  }
+}

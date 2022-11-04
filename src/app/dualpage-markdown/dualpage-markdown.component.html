@@ -1,0 +1,20 @@
+
+
+<div class="editor">
+  <ngx-monaco-editor [options]="editorOptions" [(ngModel)]="code" (input)= "parse()"  (init)="editorInit($event)   "></ngx-monaco-editor>
+</div>
+
+
+<span class="download-button"(click)="downloadMarkdown()"><strong><u> Download Your Markdown</u></strong></span>
+
+
+
+
+<!-- <textarea name="mytext"
+            #mytext
+          rows="30"
+          cols="50"
+          required 
+          [value]="this.text" (input)="parse()" 
+          ></textarea> -->
+<div class="rendered-text" [innerHtml] = this.html></div>
